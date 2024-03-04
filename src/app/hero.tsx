@@ -17,7 +17,7 @@ function Hero() {
           >
             Welcome to my professional resume page! Below, you&apos;ll find a
             comprehensive overview of my skills, qualifications, and experience
-            in the field of web development.
+            in the field of web and mobile development.
           </Typography>
           <Typography className="mt-12 mb-4 text-blue-gray-900 font-medium uppercase">
             Connect me on:
