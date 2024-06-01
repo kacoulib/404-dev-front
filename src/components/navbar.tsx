@@ -17,8 +17,8 @@ export const NAV_MENU: INavItem[] = [
   { children: "About Us", href: "#" },
   { children: "Mobile Apps", href: "#mobile" },
   { children: "Websites", href: "#web" },
-  { children: "Skills", href: "#skills" },
   { children: "Testimonials", href: "#testimonials" },
+  { children: "Skills", href: "#skills" },
 ];
 
 function NavItem({ children, href = "#" }: INavItem) {

@@ -1,13 +1,6 @@
 "use client";
 import { Typography } from "@material-tailwind/react";
-import {
-  AcademicCapIcon,
-  BriefcaseIcon,
-  FireIcon,
-} from "@heroicons/react/24/solid";
-
 import InfoCard, { InfoCardProps } from "@/components/info-card";
-import SkillsCard from "@/components/skill-card";
 
 const EXPERIENCE: {
   categoryId: string;
@@ -16,7 +9,7 @@ const EXPERIENCE: {
 }[] = [
   {
     categoryId: "web",
-    category: "Website",
+    category: "Websites",
     experiences: [
       {
         icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB+klEQVR4Ae2XQ7gcQRRGK7aTXZxtbGPu7Tir2Da6bsfWNrvYto15U7djZxPbtq2aZ48neOf7/l337dPlEimRxuBdTbKIUNN6XesMpsvRmhgUMX6TCq6RDZuIcaq0jc7mwYbVRhyqlUsEgXQmQ1vJeIUYf6YYG7+7n1O4TCroM9jlKCX8Qe6uX5wYI3Rx36PFYRq5HFX1zwhPsZTRlBhepvYByTBHunCSR7GN9pO4flbhCcT41ZM/tPZjBREMdPFwC7z0S+CnSNdnbqVMnkbPsoQCl/wRsPYbTb0crO/I5WgRV8AZUgEdGz9LBowswDAj1AJReUJ7GuUXJkPfMAn8lArGCzMCyvolYEMDyXDTkxDjhwR1bfcoJoaHoZiGkmFfgrq3hIYUzguPALwRmqGMtcMhoBN3Op7xRWCwEytIhas8SVJdHdeuVUhnQUIB92BUcDxsAhpiozIxfgmdALxManMaFToBfJTk7kYMCzwVGKIaVJIKN3oTsvF2VN2rIikmTRLppYIp+lAajPMAMSyPOmWdEilhqgbViNEOlsDvOD17wYllBkZAgUAK6FO1VA1qCV+w9jcsYjE0N9kYKW1cKhlPkI3XPQrjSckwsJtnh1bPGXygTiFrv6OmqbALKWOCZeNCYlCS4W7UlDtnKRjSY6u+1ISYlG5SafwCY5JHRJ3jtpcAAAAASUVORK5CYII=",
@@ -128,7 +121,7 @@ const EXPERIENCE: {
   },
   {
     categoryId: "mobile",
-    category: "Mobile App",
+    category: "Mobile Apps",
     experiences: [
       {
         icon: "https://static.wixstatic.com/media/6a3f14_b0b9e19941f04290b3e6067b6f39bb48%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/6a3f14_b0b9e19941f04290b3e6067b6f39bb48%7Emv2.png",
@@ -188,10 +181,10 @@ const EXPERIENCE: {
           "Développement des animations et optimisation des performances de l'application. Review du code existant et définition des guidelines front.",
       },
       {
-        icon: "https://res.cloudinary.com/rchzr/image/upload/h_16,w_16/v1/RoomChazer/cmiyxjkqt33le1pkjdq5",
+        icon: "https://avatars.githubusercontent.com/u/24407824?s=200&v=4",
         title: "Roomchazer",
         date: "Novembre 2022 - Aujourd'hui",
-        image: "https://example.com/iicontact-image.jpg",
+
         website: "https://www.roomchazer.com",
         socials: [
           {
@@ -225,7 +218,8 @@ const EXPERIENCE: {
       {
         title: "Intégrateur Mobile - Iicontact",
         date: "Février 2018 - Mars 2018",
-        image: "https://example.com/iicontact-image.jpg",
+        image:
+          "https://static.cnews.fr/sites/default/files/styles/image_750_422/public/iicontact_0.jpg?itok=PpU-E9Rp",
         website: "https://iicontact.com",
         socials: [
           {
@@ -240,147 +234,9 @@ const EXPERIENCE: {
   },
 ];
 
-const SKILLS = [
-  {
-    category: "Compétences principales",
-    skills: [
-      {
-        name: "React.js",
-        icon: "https://reactjs.org/favicon.ico",
-        link: "https://reactjs.org/",
-      },
-      {
-        name: "Node.js",
-        icon: "https://nodejs.org/static/images/favicons/favicon.png",
-        link: "https://nodejs.org/",
-      },
-      {
-        name: "Fullstack Development",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png",
-        link: "https://en.wikipedia.org/wiki/Full-stack_developer",
-      },
-      {
-        name: "SaaS",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png",
-        link: "https://en.wikipedia.org/wiki/Software_as_a_service",
-      },
-      {
-        name: "Mobile Development (iOS, Android)",
-        icon: "https://reactnative.dev/img/favicon.ico",
-        link: "https://developer.apple.com/ios/",
-      },
-    ],
-  },
-  {
-    category: "Autres compétences",
-    skills: [
-      {
-        name: "MongoDB",
-        icon: "https://www.mongodb.com/assets/images/global/favicon.ico",
-        link: "https://www.mongodb.com/",
-      },
-      {
-        name: "JavaScript",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
-        link: "https://www.javascript.com/",
-      },
-      {
-        name: "HTML5",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/langfr-260px-HTML5_logo_and_wordmark.svg.png",
-        link: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
-      },
-      {
-        name: "CSS3",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/langfr-260px-CSS3_logo_and_wordmark.svg.png",
-        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-      },
-      {
-        name: "Angular",
-        icon: "https://angular.io/assets/images/favicons/favicon.ico",
-        link: "https://angular.io/",
-      },
-      {
-        name: "TypeScript",
-        icon: "https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae",
-        link: "https://www.typescriptlang.org/",
-      },
-      {
-        name: "PHP",
-        icon: "https://www.php.net/favicon.ico",
-        link: "https://www.php.net/",
-      },
-      {
-        name: "Laravel",
-        icon: "https://laravel.com/img/favicon/favicon-16x16.png",
-        link: "https://laravel.com/",
-      },
-      {
-        name: "MySQL",
-        icon: "https://labs.mysql.com/common/themes/sakila/favicon.ico",
-        link: "https://www.mysql.com/",
-      },
-      {
-        name: "Express.js",
-        icon: "https://expressjs.com/images/favicon.png",
-        link: "https://expressjs.com/",
-      },
-      {
-        name: "Bootstrap",
-        icon: "https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico",
-        link: "https://getbootstrap.com/",
-      },
-      {
-        name: "Ionic",
-        icon: "https://ionicframework.com/favicon.ico",
-        link: "https://ionicframework.com/",
-      },
-      {
-        name: "React Native",
-        icon: "https://reactnative.dev/img/favicon.ico",
-        link: "https://reactnative.dev/",
-      },
-      {
-        name: "Material-UI",
-        icon: "https://material-ui.com/static/favicon.ico",
-        link: "https://material-ui.com/",
-      },
-      {
-        name: "Git",
-        icon: "https://git-scm.com/favicon.ico",
-        link: "https://git-scm.com/",
-      },
-      {
-        name: "SEO",
-        icon: "https://www.google.com/favicon.ico",
-        link: "https://www.google.com/search/howsearchworks/optimization/",
-      },
-      {
-        name: "Agile Methodologies",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png",
-        link: "https://en.wikipedia.org/wiki/Agile_software_development",
-      },
-      {
-        name: "Test-Driven Development (TDD)",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png",
-        link: "https://en.wikipedia.org/wiki/Test-driven_development",
-      },
-      {
-        name: "Jest",
-        icon: "https://jestjs.io/img/favicon/favicon.ico",
-        link: "https://jestjs.io/",
-      },
-      {
-        name: "PostgreSQL",
-        icon: "https://www.postgresql.org/favicon.ico",
-        link: "https://www.postgresql.org/",
-      },
-    ],
-  },
-];
-
 export function InformationSection() {
   return (
-    <section id="experience" className="pb-28 px-8">
+    <section id="experience" className="pb-14 px-8">
       <div className="container mx-auto">
         <div className="mb-10">
           <Typography
@@ -405,24 +261,6 @@ export function InformationSection() {
             </div>
           </div>
         ))}
-      </div>
-
-      <div id="skills" className="container gap-20 mt-36 mx-auto items-center">
-        <div>
-          <div className="mb-10">
-            <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
-              Skills
-            </Typography>
-            <Typography variant="lead" className="!text-gray-500">
-              Check out my technical and soft skills.
-            </Typography>
-          </div>
-          <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12 lg:grid-cols-2">
-            {SKILLS.map((props, idx) => (
-              <SkillsCard key={idx} {...props} />
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
