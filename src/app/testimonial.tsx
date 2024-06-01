@@ -102,7 +102,7 @@ export function Testimonial() {
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
           >
             Discover what clients have to say about their experiences working
-            with me. My client's satisfaction is my greatest achievement!
+            with me. My clients satisfaction is my greatest achievement!
           </Typography>
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
