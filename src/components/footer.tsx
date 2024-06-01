@@ -1,6 +1,6 @@
 import { Typography, Button } from "@material-tailwind/react";
+import { NAV_MENU } from "./navbar";
 
-const LINKS = ["Home", "About Us", "Blog", "Service"];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
@@ -14,25 +14,24 @@ export function Footer() {
               Material Tailwind
             </a>{" "}
             by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
-              Creative Tim
+            <a href="https://x.com/kacoulib" target="_blank">
+              @kacouilb
             </a>
             .
           </Typography>
           <ul className="flex gap-8 items-center">
-            {LINKS.map((link) => (
-              <li key={link}>
+            {NAV_MENU.map((nav, index) => (
+              <li key={index}>
                 <Typography
                   as="a"
-                  href="#"
+                  href={nav.href}
                   variant="small"
                   className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
                 >
-                  {link}
+                  {nav.children}
                 </Typography>
               </li>
             ))}
-            <Button color="gray">subscribe</Button>
           </ul>
         </div>
       </div>
