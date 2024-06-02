@@ -1,7 +1,8 @@
 "use client";
 
-import { IconButton, Typography } from "@material-tailwind/react";
-import Image from "next/image";
+import { Socials } from "@/components/socials";
+import { handleScroll } from "@/utils/events";
+import { Typography } from "@material-tailwind/react";
 import Link from "next/link";
 
 function Hero() {
@@ -17,11 +18,28 @@ function Hero() {
             color="gray"
             className="mt-4 mb-12 w-full md:max-w-full lg:max-w-4xl"
           >
-            I am a seasoned <strong>web and mobile developer</strong>{" "}
+            I am a seasoned{" "}
+            <strong className="cursor-pointer" onClick={handleScroll("#saas")}>
+              web
+            </strong>{" "}
+            and{" "}
+            <strong
+              className="cursor-pointer"
+              onClick={handleScroll("#mobile")}
+            >
+              mobile developer
+            </strong>{" "}
             specializing in <strong>full-stack development</strong> with{" "}
             <strong>React</strong>, <strong>Node.js</strong>, and{" "}
-            <strong>SaaS</strong> solutions. Explore my{" "}
-            <Link href="#skills" className="text-blue-500">
+            <strong className="cursor-pointer" onClick={handleScroll("#saas")}>
+              SaaS
+            </strong>{" "}
+            solutions. Explore my{" "}
+            <Link
+              href="#skills"
+              className="text-blue-500"
+              onClick={handleScroll("#skills")}
+            >
               <strong>skills</strong>
             </Link>
             ,{" "}
@@ -29,15 +47,27 @@ function Hero() {
               <strong>qualifications</strong>
             </Link>
             , and extensive{" "}
-            <Link href="#experience" className="text-blue-500">
+            <Link
+              href="#experience"
+              className="text-blue-500"
+              onClick={handleScroll("#mobile")}
+            >
               <strong>experience</strong>
             </Link>{" "}
             in creating robust applications for both{" "}
-            <Link href="#web" className="text-blue-500">
+            <Link
+              href="#saas"
+              className="text-blue-500"
+              onClick={handleScroll("#saas")}
+            >
               <strong>web</strong>
             </Link>{" "}
             and{" "}
-            <Link href="#mobile" className="text-blue-500">
+            <Link
+              href="#mobile"
+              className="text-blue-500"
+              onClick={handleScroll("#mobile")}
+            >
               <strong>mobile platforms</strong>
             </Link>
             .
@@ -45,33 +75,7 @@ function Hero() {
           <Typography className="mt-12 mb-4 text-blue-gray-900 font-medium uppercase">
             Connect with me on:
           </Typography>
-          <div className="gap-2 lg:flex">
-            <IconButton variant="text" color="blue">
-              <Link href="https://x.com/kacoulib" target="_blank">
-                <i className="fa-brands fa-twitter text-lg" />
-              </Link>
-            </IconButton>
-
-            <IconButton variant="text" color="gray">
-              <Link
-                href="https://www.linkedin.com/in/kacoulib/"
-                target="_blank"
-              >
-                <i className="fa-brands fa-linkedin text-lg" />
-              </Link>
-            </IconButton>
-
-            <IconButton variant="text" color="gray">
-              <Link href="https://www.malt.fr/profile/kacoulib" target="_bank">
-                <Image
-                  width={24}
-                  height={24}
-                  src="https://dam.malt.com/rebranding2020/malt-logo/icon-76x76"
-                  alt="karim coulibaly malt user"
-                />
-              </Link>
-            </IconButton>
-          </div>
+          <Socials />
         </div>
       </div>
     </div>

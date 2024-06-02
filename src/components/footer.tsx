@@ -1,5 +1,7 @@
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import { NAV_MENU } from "./navbar";
+import { handleScroll } from "@/utils/events";
+import { Socials } from "./socials";
 
 const CURRENT_YEAR = new Date().getFullYear();
 
@@ -19,11 +21,13 @@ export function Footer() {
             </a>
             .
           </Typography>
+          <Socials />
           <ul className="flex gap-8 items-center">
             {NAV_MENU.map((nav, index) => (
               <li key={index}>
                 <Typography
                   as="a"
+                  onClick={handleScroll(nav.href)}
                   href={nav.href}
                   variant="small"
                   className="font-normal text-gray-700 hover:text-gray-900 transition-colors"

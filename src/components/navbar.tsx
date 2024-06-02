@@ -7,21 +7,25 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import { handleScroll } from "@/utils/events";
 
 interface INavItem {
   children: React.ReactNode;
-  href?: string;
+  href: string;
 }
 
 export const NAV_MENU: INavItem[] = [
-  { children: "About Us", href: "#" },
   { children: "Mobile Apps", href: "#mobile" },
-  { children: "Websites", href: "#web" },
+  { children: "Saas", href: "#saas" },
   { children: "Testimonials", href: "#testimonials" },
   { children: "Skills", href: "#skills" },
 ];
 
-function NavItem({ children, href = "#" }: INavItem) {
+function NavItem({
+  children,
+  href = "#",
+  onClick,
+}: INavItem & { onClick: (to: string) => (e: React.MouseEvent) => void }) {
   return (
     <li>
       <Typography
@@ -29,6 +33,7 @@ function NavItem({ children, href = "#" }: INavItem) {
         href={href}
         variant="paragraph"
         color="gray"
+        onClick={onClick(href)}
         className="flex items-center gap-2 font-medium text-gray-900"
       >
         {children}
@@ -65,12 +70,13 @@ export function Navbar() {
           href="#"
           color="blue-gray"
           className="text-lg font-bold"
+          onClick={handleScroll("#body")}
         >
           404 DEV
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map((nav, index) => (
-            <NavItem key={index} {...nav} />
+            <NavItem key={index} {...nav} onClick={handleScroll} />
           ))}
         </ul>
         <IconButton
@@ -90,7 +96,7 @@ export function Navbar() {
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
             {NAV_MENU.map((nav, index) => (
-              <NavItem key={index} {...nav} />
+              <NavItem key={index} {...nav} onClick={handleScroll} />
             ))}
           </ul>
         </div>

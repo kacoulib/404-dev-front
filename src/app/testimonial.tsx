@@ -28,26 +28,28 @@ export function Testimonial() {
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
           <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between ">
-            <div className="w-full mb-10 lg:mb-0">
-              <Typography
-                variant="h3"
-                color="blue-gray"
-                className="mb-4 font-bold lg:max-w-xs"
-              >
-                {activeTestimonial.category}
-              </Typography>
-              <Typography className="mb-3 w-full lg:w-8/12 font-normal !text-gray-500">
-                {activeTestimonial.text}
-              </Typography>
-              <Typography variant="h6" color="blue-gray" className="mb-0.5">
-                {activeTestimonial.name} - {activeTestimonial.title}
-              </Typography>
-              <Typography
-                variant="small"
-                className="font-normal mb-5 !text-gray-500"
-              >
-                {activeTestimonial.company}
-              </Typography>
+            <div className="flex flex-col justify-between h-auto w-full mb-10 lg:mb-0">
+              <div>
+                <Typography
+                  variant="h3"
+                  color="blue-gray"
+                  className="mb-4 font-bold lg:max-w-xs"
+                >
+                  {activeTestimonial.category}
+                </Typography>
+                <Typography className="mb-3 w-full lg:w-8/12 font-normal !text-gray-500">
+                  {activeTestimonial.text}
+                </Typography>
+                <Typography variant="h6" color="blue-gray" className="mb-0.5">
+                  {activeTestimonial.name} - {activeTestimonial.title}
+                </Typography>
+                <Typography
+                  variant="small"
+                  className="font-normal mb-5 !text-gray-500"
+                >
+                  {activeTestimonial.company}
+                </Typography>
+              </div>
               <div className="flex items-center gap-4">
                 {TESTIMONIALS.map((testimonial) => (
                   <React.Fragment key={testimonial.id}>

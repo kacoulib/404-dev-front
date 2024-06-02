@@ -8,7 +8,7 @@ export function SkillsSection() {
   return (
     <section
       id="skills"
-      className="container gap-20 mt-36 mx-auto items-center"
+      className="container gap-20 pt-6 mt-30 mx-auto items-center"
     >
       <div>
         <div className="mb-10">

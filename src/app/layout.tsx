@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+
 import { Layout } from "@/components";
 
 const roboto = Roboto({
@@ -32,7 +33,7 @@ export default function RootLayout({
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
-      <body className={roboto.className}>
+      <body id="body" className={roboto.className}>
         <Layout>{children}</Layout>
       </body>
     </html>

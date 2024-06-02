@@ -1,13 +1,13 @@
+import reactToString from "react-to-string";
 import { cx } from "@/utils/css";
 import {
   Card,
   CardHeader,
   CardBody,
   Typography,
-  IconButton,
 } from "@material-tailwind/react";
-import Image from "next/image";
 import Link from "next/link";
+import { truncateText } from "@/utils/fn";
 
 interface SocialLink {
   className?: string;
@@ -23,6 +23,37 @@ interface SocialLink {
     | "YouTube";
 }
 
+export type Skills =
+  | "React.js"
+  | "Restful API"
+  | "Frontend Development"
+  | "Animation"
+  | "Node.js"
+  | "WordPress"
+  | "Fullstack Development"
+  | "SaaS"
+  | "Mobile Development (iOS, Android)"
+  | "MongoDB"
+  | "JavaScript"
+  | "HTML5"
+  | "CSS3"
+  | "Angular"
+  | "TypeScript"
+  | "PHP"
+  | "Laravel"
+  | "MySQL"
+  | "Express.js"
+  | "Bootstrap"
+  | "Ionic"
+  | "React Native"
+  | "Material-UI"
+  | "Git"
+  | "SEO"
+  | "Agile Methodologies"
+  | "Test-Driven Development (TDD)"
+  | "Jest"
+  | "PostgreSQL";
+
 export interface InfoCardProps {
   icon?: string;
   title: string;
@@ -30,7 +61,10 @@ export interface InfoCardProps {
   image?: string;
   website: string;
   socials: SocialLink[];
-  children: React.ReactNode;
+  children: JSX.Element;
+  coverContain?: boolean;
+  skills?: Skills[];
+  onClick?: () => void;
 }
 
 export function InfoCard({
@@ -41,31 +75,41 @@ export function InfoCard({
   website,
   socials,
   children,
+  onClick,
 }: InfoCardProps) {
+  const text = reactToString(children);
+  const excerpt = truncateText(text, 20);
+
   return (
-    <Card className="mb-8">
-      <CardHeader className="flex items-center justify-between rounded-none overflow-visible">
-        <div className="flex flex-col gap-1 w-full">
-          <Typography color="blue-gray" variant="h5" className="w-full">
-            {title}
-          </Typography>
-          <Typography color="blue-gray" className="font-semibold text-xs">
-            {date}
-          </Typography>
-        </div>
-        {!!icon && (
-          <img className="max-w-[100px] w-fit max-h-8" src={icon} alt={title} />
+    <Card className="shadow-lg mb-8 border border-gray-300 overflow-hidden">
+      <div onClick={onClick}>
+        <CardHeader className="flex items-center justify-between rounded-none overflow-visible mx-0 py-2 px-4 mt-0 shadow-none">
+          <div className="flex flex-col w-full">
+            <Typography color="blue-gray" variant="h5" className="w-full">
+              {title}
+            </Typography>
+            <Typography className="!text-gray-500 font-medium text-xs">
+              {date}
+            </Typography>
+          </div>
+          {!!icon && (
+            <img
+              className="max-w-[100px] w-fit max-h-8"
+              src={icon}
+              alt={title}
+            />
+          )}
+        </CardHeader>
+        {!!image && (
+          <div
+            className="w-full h-[300px] bg-center bg-no-repeat bg-cover overflow-hidden"
+            style={{ backgroundImage: `url(${image})` }}
+          />
         )}
-      </CardHeader>
-      {!!image && (
-        <div
-          className="w-full h-[300px] bg-center bg-no-repeat bg-cover overflow-hidden"
-          style={{ backgroundImage: `url(${image})` }}
-        />
-      )}
+      </div>
       <CardBody className="grid justify-start !px-3.5 pt-2">
-        <Typography className="font-normal !text-gray-500 mb-4">
-          {children}
+        <Typography className="font-normal mb-4 text-base tracking-tight">
+          {excerpt}
         </Typography>
         <div className="flex space-x-4">
           <Link
