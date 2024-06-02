@@ -14,7 +14,7 @@ export const EXPERIENCE: {
       {
         icon: "https://static.wixstatic.com/media/6a3f14_b0b9e19941f04290b3e6067b6f39bb48%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/6a3f14_b0b9e19941f04290b3e6067b6f39bb48%7Emv2.png",
         title: "Mimsha",
-        date: "Avril 2024 - Aujourd'hui",
+        date: "April 2024 - Today",
         image:
           "https://static.wixstatic.com/media/6a3f14_0166cda06af1405eae07263ef62a74bc~mv2.png/v1/crop/x_32,y_0,w_2898,h_2578/fill/w_726,h_646,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Psd.png",
         website: "https://www.mimsha.com/",
@@ -37,24 +37,21 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Lors de mon travail sur Mimsha (Livraison et expédition de colis
-              entre particuliers), j'ai apporté des améliorations significatives
-              en corrigeant des bugs, en ajoutant des animations, en optimisant
-              l'ergonomie, et en assurant la traduction de l'application.
+              While working on Mimsha (Delivery and shipping of packages between
+              individuals), I made significant improvements by fixing bugs,
+              adding animations, optimizing the user interface, and ensuring the
+              translation of the application.
             </p>
             <ul>
-              <li>Correction de bugs</li>
-              <li>Ajout d'animations interactives</li>
-              <li>Optimisation de l'ergonomie utilisateur</li>
-              <li>Assurance de la traduction multilingue</li>
-              <li>Intégration de nouvelles fonctionnalités</li>
-              <li>Amélioration des performances de l'application</li>
-              <li>Refactorisation du code pour une meilleure maintenabilité</li>
-              <li>
-                Collaboration avec l'équipe de conception pour l'interface
-                utilisateur
-              </li>
-              <li>Assistance technique et support post-lancement</li>
+              <li>Bug fixing</li>
+              <li>Adding interactive animations</li>
+              <li>Optimizing user ergonomics</li>
+              <li>Ensuring multilingual translation</li>
+              <li>Integrating new features</li>
+              <li>Improving application performance</li>
+              <li>Refactoring code for better maintainability</li>
+              <li>Collaborating with the design team on the user interface</li>
+              <li>Providing technical assistance and post-launch support</li>
             </ul>
           </div>
         ),
@@ -63,7 +60,7 @@ export const EXPERIENCE: {
       {
         icon: "https://app.wealthcome.fr/wealthcome.ico",
         title: "Wealthcome",
-        date: "Novembre 2022 - Aujourd'hui",
+        date: "November 2022 - Today",
         image:
           "https://media.licdn.com/dms/image/D4E22AQGUQOfavkKa7Q/feedshare-shrink_800/0/1692869155014?e=1720051200&v=beta&t=IAKkqQnlwlcsIgSrD6yxxHnrWqBZ_wp6yfvfQs5GRM8",
         website: "https://pro.wealthcome.fr/",
@@ -92,25 +89,22 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Dans le cadre de ce projet, j'ai participé au développement de
-              l'application mobile pour Android et iOS. Mes responsabilités
-              comprenaient l'implémentation du routage, la gestion des appels
-              API, la structuration du projet et l'amélioration de l'expérience
-              utilisateur.
+              As part of this project, I participated in the development of the
+              mobile application for Android and iOS. My responsibilities
+              included implementing routing, managing API calls, structuring the
+              project, and enhancing the user experience.
             </p>
             <ul>
-              <li>Développement de l'application mobile pour Android et iOS</li>
-              <li>Implémentation du routage</li>
-              <li>Gestion des appels API</li>
-              <li>Structuration du projet</li>
-              <li>Amélioration de l'expérience utilisateur</li>
-              <li>Optimisation des performances de l'application</li>
+              <li>Developing the mobile application for Android and iOS</li>
+              <li>Implementing routing</li>
+              <li>Managing API calls</li>
+              <li>Structuring the project</li>
+              <li>Enhancing user experience</li>
+              <li>Optimizing application performance</li>
+              <li>Testing and debugging to ensure application stability</li>
               <li>
-                Tests et débogage pour assurer la stabilité de l'application
-              </li>
-              <li>
-                Collaboration avec l'équipe de conception pour l'intégration des
-                interfaces utilisateur
+                Collaborating with the design team for user interface
+                integration
               </li>
             </ul>
           </div>
@@ -126,7 +120,7 @@ export const EXPERIENCE: {
       {
         icon: "https://res.cloudinary.com/rchzr/image/upload/h_16,w_16/v1/RoomChazer/cmiyxjkqt33le1pkjdq5",
         title: "Roomchazer",
-        date: "Novembre 2022 - Aujourd'hui",
+        date: "November 2022 - September 2023",
         image: "/image/roomchazer_screen.png",
         website: "https://www.roomchazer.com",
         coverContain: true,
@@ -147,20 +141,17 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Dans ce projet, j'ai contribué à la création de l'application
-              mobile et du site web de RoomChazer.
+              In this project, I contributed to the creation of the mobile
+              application and website for RoomChazer.
             </p>
             <ul>
-              <li>Développement de l'application mobile</li>
-              <li>Création et intégration du site web</li>
-              <li>Implémentation des fonctionnalités de réservation</li>
+              <li>Developing the mobile application</li>
+              <li>Creating and integrating the website</li>
+              <li>Implementing booking features</li>
+              <li>Optimizing the user interface for a better experience</li>
               <li>
-                Optimisation de l'interface utilisateur pour une meilleure
-                expérience
-              </li>
-              <li>
-                Tests et débogage pour assurer la stabilité de l'application et
-                du site web
+                Testing and debugging to ensure the stability of the application
+                and website
               </li>
             </ul>
           </div>
@@ -176,7 +167,7 @@ export const EXPERIENCE: {
       {
         icon: "https://www.balenciaga.com/on/demandware.static/Sites-BAL-R-WEUR-Site/-/default/dw6150e049/images/favicons/favicon-32x32.png",
         title: "Balenciaga",
-        date: "Août 2018 - Septembre 2018",
+        date: "August 2018 - Septembre",
         image: "https://example.com/balenciaga-image.jpg",
         website: "https://www.balenciaga.com",
         socials: [
@@ -185,18 +176,18 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Lors de cette mission, j'ai eu l'opportunité d'élaborer le cahier
-              des charges pour une application mobile interne destinée aux
-              employé(e)s de Balenciaga.
+              During this assignment, I had the opportunity to develop the
+              specifications for an internal mobile application for Balenciaga
+              employees.
             </p>
             <ul>
               <li>
-                Recueil des besoins, audit de l'existant, analyse de cahier des
-                charges, bench
+                Gathering requirements, auditing existing systems, analyzing
+                specifications, and benchmarking
               </li>
-              <li>Élaboration du cahier des charges</li>
-              <li>Rédaction de spécifications fonctionnelles détaillées</li>
-              <li>Estimation budgétaire et chiffrage</li>
+              <li>Developing the specifications document</li>
+              <li>Writing detailed functional specifications</li>
+              <li>Budget estimation and cost analysis</li>
             </ul>
           </div>
         ),
@@ -205,7 +196,7 @@ export const EXPERIENCE: {
       {
         icon: "https://avatars.githubusercontent.com/u/24407824?s=200&v=4",
         title: "Iicontact",
-        date: "Février 2018 - Mars 2018",
+        date: "February 2018 - March",
         image:
           "https://static.cnews.fr/sites/default/files/styles/image_750_422/public/iicontact_0.jpg?itok=PpU-E9Rp",
         website: "https://iicontact.com",
@@ -218,14 +209,14 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              iContact, c’est une application qui met la technologie au service
-              des rencontres.
+              iContact is an application that uses technology to facilitate
+              meetings.
             </p>
             <ul>
-              <li>Réalisation des animations de l’application</li>
-              <li>Review du code existant</li>
-              <li>Définition de guidelines front</li>
-              <li>Formulaire d’inscription et validation</li>
+              <li>Creating application animations</li>
+              <li>Reviewing existing code</li>
+              <li>Defining front-end guidelines</li>
+              <li>Designing and validating the registration form</li>
             </ul>
           </div>
         ),
@@ -240,7 +231,7 @@ export const EXPERIENCE: {
       {
         icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB+klEQVR4Ae2XQ7gcQRRGK7aTXZxtbGPu7Tir2Da6bsfWNrvYto15U7djZxPbtq2aZ48neOf7/l337dPlEimRxuBdTbKIUNN6XesMpsvRmhgUMX6TCq6RDZuIcaq0jc7mwYbVRhyqlUsEgXQmQ1vJeIUYf6YYG7+7n1O4TCroM9jlKCX8Qe6uX5wYI3Rx36PFYRq5HFX1zwhPsZTRlBhepvYByTBHunCSR7GN9pO4flbhCcT41ZM/tPZjBREMdPFwC7z0S+CnSNdnbqVMnkbPsoQCl/wRsPYbTb0crO/I5WgRV8AZUgEdGz9LBowswDAj1AJReUJ7GuUXJkPfMAn8lArGCzMCyvolYEMDyXDTkxDjhwR1bfcoJoaHoZiGkmFfgrq3hIYUzguPALwRmqGMtcMhoBN3Op7xRWCwEytIhas8SVJdHdeuVUhnQUIB92BUcDxsAhpiozIxfgmdALxManMaFToBfJTk7kYMCzwVGKIaVJIKN3oTsvF2VN2rIikmTRLppYIp+lAajPMAMSyPOmWdEilhqgbViNEOlsDvOD17wYllBkZAgUAK6FO1VA1qCV+w9jcsYjE0N9kYKW1cKhlPkI3XPQrjSckwsJtnh1bPGXygTiFrv6OmqbALKWOCZeNCYlCS4W7UlDtnKRjSY6u+1ISYlG5SafwCY5JHRJ3jtpcAAAAASUVORK5CYII=",
         title: "Eurekles",
-        date: "Décembre 2019 - Novembre 2021",
+        date: "December 2019 - November 2021",
         website: "https://www.eurekles.com/",
         image:
           "https://media.licdn.com/dms/image/C4D22AQEn7YUQxxt3Aw/feedshare-shrink_2048_1536/0/1623227491694?e=1720051200&v=beta&t=N-4Vw3XZ2Cf6T2ZL0Uq2-imcbaYaEyz9bvvf0qD7BQU",
@@ -254,32 +245,28 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              L'énergie simplifiée. Notre vocation : faciliter vos achats
-              d’énergie.
+              Simplified energy. Our mission: to facilitate your energy
+              purchases.
             </p>
             <p>
-              Experts des marchés du gaz naturel et de l’électricité, nous vous
-              donnons accès à un ensemble d’offres et de services connexes en
-              quelques clics.
+              Experts in natural gas and electricity markets, we give you access
+              to a range of offers and related services in just a few clicks.
             </p>
             <p>
-              Sur ce projet fait en React et Node.js, j'ai aidé sur le front-end
-              et le back-end à différentes étapes.
+              In this React and Node.js project, I assisted in both the
+              front-end and back-end at various stages.
             </p>
             <ul>
-              <li>Développement de l'interface utilisateur en React</li>
-              <li>Implémentation des composants front-end</li>
+              <li>Developing the user interface in React</li>
+              <li>Implementing front-end components</li>
+              <li>Managing API calls and integrating back-end services</li>
+              <li>Developing back-end functionalities in Node.js</li>
+              <li>Optimizing application performance</li>
+              <li>Testing and debugging to ensure project stability</li>
               <li>
-                Gestion des appels API et intégration des services back-end
+                Collaborating with the design team to integrate user interfaces
               </li>
-              <li>Développement des fonctionnalités back-end en Node.js</li>
-              <li>Optimisation des performances de l'application</li>
-              <li>Tests et débogage pour assurer la stabilité du projet</li>
-              <li>
-                Collaboration avec l'équipe de conception pour intégrer les
-                interfaces utilisateur
-              </li>
-              <li>Assistance technique et support post-lancement</li>
+              <li>Providing technical assistance and post-launch support</li>
             </ul>
           </div>
         ),
@@ -294,7 +281,7 @@ export const EXPERIENCE: {
       {
         icon: "https://kitlenid.fr/logo.svg",
         title: "Nexity (kit le nid)",
-        date: "Décembre 2019 - Novembre 2021",
+        date: "December 2019 - November 2021",
         image: "https://dam.malt.com/6fde98c6-10e8-4d8b-a120-701f66cabca8",
         website: "https://kitlenid.fr",
         socials: [
@@ -310,24 +297,20 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Au sein de Nexity, j'ai eu la chance de pouvoir travailler sur
-              l'une de leur nouvelle solution d'acquisition immobilier à
-              destination des jeunes étudiants.
+              At Nexity, I had the opportunity to work on a new real estate
+              acquisition solution aimed at young students.
             </p>
             <p>
-              Ma mission dans l'équipe était le développement "from scratch" de
-              la plateforme en utilisant du React pour le front-end et Node.js
-              pour le back-end.
+              My role in the team was to develop the platform from scratch using
+              React for the front-end and Node.js for the back-end.
             </p>
-            <div>Je suis intervenu sur les différentes étapes du projet :</div>
+            <div>I contributed to various stages of the project:</div>
             <ul>
-              <li>
-                Conception de l'architecture Front React.js & Back Node.js
-              </li>
-              <li>Développement de la plateforme</li>
-              <li>Création de l'api</li>
-              <li>Système d'envoi de mail</li>
-              <li>Recherche de biens via l'api google maps</li>
+              <li>Designing the Front React.js & Back Node.js architecture</li>
+              <li>Developing the platform</li>
+              <li>Creating the API</li>
+              <li>Implementing the email sending system</li>
+              <li>Property search via the Google Maps API</li>
             </ul>
           </div>
         ),
@@ -342,7 +325,7 @@ export const EXPERIENCE: {
       {
         icon: "https://static-p46175-e229011.adobeaemcloud.com/a3b99389148af1bc6e27f0c4b50c6458468d86e18bd44f70b9acd44cd2d1b0f1/resources/images/favicon-32x32.png",
         title: "Accor Hotels",
-        date: "Juin 2019 - Juillet 2019",
+        date: "June 2019 - July",
         image: "https://dam.malt.com/kftrgjkdr1tckdppo3qa",
         website: "https://all.accor.com/a/fr.html",
         socials: [
@@ -370,31 +353,30 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Réduction/suppression des obstacles empêchant les utilisateurs :
-              personnes valides, seniors, personnes en situation de handicap
-              (déficience visuelle, déficience auditive, mobilité réduite,
-              troubles cognitifs).
+              Reducing/removing barriers that prevent users: able-bodied people,
+              seniors, and people with disabilities (visual impairments, hearing
+              impairments, reduced mobility, cognitive disorders).
             </p>
             <p>
-              D'accéder aux contenus ou d'interagir avec les différents sites
-              web d'AccorHotels.
+              From accessing content or interacting with various AccorHotels
+              websites.
             </p>
             <ul>
               <li>
-                Évaluation et amélioration de l'accessibilité des sites web pour
-                assurer une expérience utilisateur inclusive.
+                Evaluating and improving website accessibility to ensure an
+                inclusive user experience.
               </li>
               <li>
-                Implémentation des méthodologies Agile pour une gestion de
-                projet flexible et réactive.
+                Implementing Agile methodologies for flexible and responsive
+                project management.
               </li>
               <li>
-                Utilisation avancée de HTML et CSS3 pour structurer et styliser
-                les contenus web de manière conforme aux standards.
+                Advanced use of HTML and CSS3 to structure and style web content
+                according to standards.
               </li>
               <li>
-                Adoption des recommandations W3C pour garantir la compatibilité
-                et l'accessibilité des sites web à un large public.
+                Adopting W3C recommendations to ensure the compatibility and
+                accessibility of websites to a wide audience.
               </li>
             </ul>
           </div>
@@ -410,7 +392,7 @@ export const EXPERIENCE: {
       {
         icon: "https://www.puydufou.com/france/themes/custom/puy_du_fou/favicon.ico",
         title: "Puy Du Fou",
-        date: "Avril 2019 - Juin 2019",
+        date: "April 2019 - June",
         image: "https://dam.malt.com/t07npoe7rprskasxafyh",
         website: "https://puydufou.com",
         socials: [
@@ -423,17 +405,17 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Dans une équipe constituée de cinq développeurs, nous avons
-              élaboré une application de prise de photo souvenir sur borne
-              interactive à destination du public du Puy du Fou.
+              In a team of five developers, we developed a souvenir photo-taking
+              application for interactive kiosks aimed at the Puy du Fou
+              visitors.
             </p>
             <ul>
               <li>
-                Manipulation d’image (Filtre visuel, rotation, montage, rognage)
+                Image manipulation (visual filters, rotation, montage, cropping)
               </li>
-              <li>Stockage de donnée de masse</li>
-              <li>Optimisation de code</li>
-              <li>Gestion responsive mobile et tablettes</li>
+              <li>Mass data storage</li>
+              <li>Code optimization</li>
+              <li>Responsive design for mobile and tablets</li>
             </ul>
           </div>
         ),
@@ -447,7 +429,7 @@ export const EXPERIENCE: {
       {
         icon: "https://medias-france.fr/wp-content/uploads/cropped-logo-medias-france-1.png",
         title: "Médias France",
-        date: "Février 2017 - Mai 2017",
+        date: "February 2017 - Mai",
         website: "https://medias-france.fr",
         socials: [
           {
@@ -458,16 +440,16 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Lors de cette mission, j’ai mis à la disposition de l’agence Média
-              France une plateforme web sécurisée permettant aux employé(e)s
-              d'extraire et de convertir automatiquement leur fichier Excel
-              avant d’être utilisé par une application tiers.
+              During this mission, I provided Media France with a secure web
+              platform that allows employees to extract and automatically
+              convert their Excel files before being used by a third-party
+              application.
             </p>
             <ul>
-              <li>Création d'une API</li>
-              <li>Conversion de fichier CSV en PHP vers format web (JSON)</li>
-              <li>Gestion responsive mobile et tablettes</li>
-              <li>Algorithmique</li>
+              <li>Creating an API</li>
+              <li>Converting CSV files in PHP to web format (JSON)</li>
+              <li>Responsive design for mobile and tablets</li>
+              <li>Algorithm development</li>
             </ul>
           </div>
         ),
@@ -483,7 +465,7 @@ export const EXPERIENCE: {
       },
       {
         title: "Les Éphémères",
-        date: "2017",
+        date: "June 2017 - December",
         image:
           "https://www.arianekensa.com/wp-content/uploads/2016/07/carrefmr2-450x430.jpg",
         website: "https://www.arianekensa.com/portfolio/les-ephemeres/",
@@ -491,14 +473,15 @@ export const EXPERIENCE: {
         children: (
           <div>
             <p>
-              Dans le cadre d'une résidence temporaire dans un lieu inédit en
-              transition, un artiste issu de l'art contemporain ou urbain est
-              invité à investir l'espace pour en faire l'écrin de sa création.
+              As part of a temporary residency in an unconventional and
+              transitional space, an artist from the contemporary or urban art
+              scene is invited to use the space as a showcase for their
+              creation.
             </p>
             <ul>
-              <li>Création de thème WordPress</li>
-              <li>Gestion responsive mobile et tablettes</li>
-              <li>Newsletter/emailing</li>
+              <li>Creating a WordPress theme</li>
+              <li>Responsive design for mobile and tablets</li>
+              <li>Newsletter/emailing management</li>
             </ul>
           </div>
         ),
@@ -600,7 +583,7 @@ export const SKILLS:
       skills: ISkills[];
     }[] = [
   {
-    category: "Compétences principales",
+    category: "Key Skills",
     skills: [
       {
         name: "React.js",
@@ -630,7 +613,7 @@ export const SKILLS:
     ],
   },
   {
-    category: "Autres compétences",
+    category: "Other Skills",
     skills: [
       {
         name: "MongoDB",
