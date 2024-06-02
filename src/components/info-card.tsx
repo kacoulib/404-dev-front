@@ -1,4 +1,3 @@
-import reactToString from "react-to-string";
 import { cx } from "@/utils/css";
 import {
   Card,
@@ -8,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import Link from "next/link";
 import { truncateText } from "@/utils/fn";
+import reactToString from "@/utils/reactToString";
 
 interface SocialLink {
   className?: string;
