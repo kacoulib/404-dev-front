@@ -8,9 +8,9 @@ export function SkillsSection() {
   return (
     <section
       id="skills"
-      className="container gap-20 pt-6 mt-30 mx-auto items-center"
+      className="container gap-20 pt-6 px-8 mt-30 mx-auto items-center"
     >
-      <div>
+      <div className="container mx-auto">
         <div className="mb-7">
           <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
             Skills
