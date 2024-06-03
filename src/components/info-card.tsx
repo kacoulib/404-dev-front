@@ -93,8 +93,9 @@ export function InfoCard({
             </Typography>
           </div>
           {!!icon && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
-              className="max-w-[100px] w-fit max-h-8"
+              className="max-w-[100px] w-fit h-fit max-h-8"
               src={icon}
               alt={title}
             />

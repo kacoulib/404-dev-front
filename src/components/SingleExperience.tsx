@@ -16,18 +16,18 @@ interface SingleExperienceProps extends InfoCardProps {
 
 export function SingleExperience(props: SingleExperienceProps) {
   return (
-    <Card className="single-experience w-full flex-row">
+    <Card className="single-experience w-full md:flex-row flex-col">
       <CardHeader
         shadow={false}
         floated={false}
-        className="m-0 w-2/5 shrink-0 rounded-r-none"
+        className="m-0 w-full md:w-2/5 shrink-0 rounded-r-none"
       >
         <div
           style={{
             backgroundImage: `url(${props.image})`,
           }}
           className={cx(
-            "h-full w-full bg-no-repeat bg-center bg-cover",
+            "min-h-[200px] md:min-h-full md:min-w-full bg-no-repeat bg-center bg-cover",
             props.coverContain ? "bg-contain" : "bg-cover"
           )}
         />

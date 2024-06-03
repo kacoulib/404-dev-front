@@ -12,7 +12,7 @@ export function Testimonial() {
     TESTIMONIALS.find((t) => t.id === active) || TESTIMONIALS[0];
 
   return (
-    <section id="testimonials" className="pt-12 px-8 min-h-screen">
+    <section id="testimonials" className="pt-12 px-8">
       <div className="container max-w-screen-lg mx-auto">
         <div className="container mx-auto mb-20 text-center">
           <Typography variant="h2" color="blue-gray" className="mb-4">
@@ -27,13 +27,13 @@ export function Testimonial() {
           </Typography>
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
-          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between ">
-            <div className="flex flex-col justify-between h-auto w-full mb-10 lg:mb-0">
+          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between">
+            <div className="flex flex-col-reverse md:flex-col justify-between h-auto w-full mb-10 lg:mb-0">
               <div>
                 <Typography
                   variant="h3"
                   color="blue-gray"
-                  className="mb-4 font-bold lg:max-w-xs"
+                  className="mt-8 md:mt-0 mb-4 font-bold lg:max-w-xs"
                 >
                   {activeTestimonial.category}
                 </Typography>
@@ -50,7 +50,7 @@ export function Testimonial() {
                   {activeTestimonial.company}
                 </Typography>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 flex-wrap">
                 {TESTIMONIALS.map((testimonial) => (
                   <React.Fragment key={testimonial.id}>
                     <Avatar
@@ -63,12 +63,12 @@ export function Testimonial() {
                       }`}
                       onClick={() => setActive(testimonial.id)}
                     />
-                    <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
+                    <div className="w-[1px] h-[36px] bg-blue-gray-100" />
                   </React.Fragment>
                 ))}
               </div>
             </div>
-            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0">
+            <div className="hidden md:block h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0">
               <Image
                 width={768}
                 height={768}
