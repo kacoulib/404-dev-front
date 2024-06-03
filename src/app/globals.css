@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/fonts/MonaSans-Regular.woff2") format("woff2"),
+    url("/fonts/MonaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-family: "Mona Sans";
+}
+
 .single-experience p {
   margin-bottom: 1rem;
   line-height: 1.5rem;

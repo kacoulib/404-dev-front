@@ -1,14 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 
 import { Layout } from "@/components";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "NextJS Tailwind Resume Tailwind",
@@ -33,7 +26,7 @@ export default function RootLayout({
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
-      <body id="body" className={roboto.className}>
+      <body id="body" className="font-mona">
         <Layout>{children}</Layout>
       </body>
     </html>
