@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import { Layout } from "@/components";
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Resume Tailwind",
+  title: "404-DEV, INC.",
   description:
-    "Download Tailwind Resume Page a Free Landing Page Template developed by Creative Tim. Based on Tailwind CSS and Material Tailwind, see the live demo on our site and join over 2.000.000 web creatives!",
+    "404-DEV, INC. — a software company building mobile and web applications. Contact us at contact@404-dev.com.",
 };
 
 export default function RootLayout({
