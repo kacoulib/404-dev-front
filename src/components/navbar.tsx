@@ -78,6 +78,17 @@ export function Navbar() {
           {NAV_MENU.map((nav, index) => (
             <NavItem key={index} {...nav} onClick={handleScroll} />
           ))}
+          <li>
+            <Typography
+              as="a"
+              href="/support"
+              variant="paragraph"
+              color="gray"
+              className="flex items-center gap-2 font-medium text-gray-900"
+            >
+              Support
+            </Typography>
+          </li>
         </ul>
         <IconButton
           variant="text"
@@ -98,6 +109,17 @@ export function Navbar() {
             {NAV_MENU.map((nav, index) => (
               <NavItem key={index} {...nav} onClick={handleScroll} />
             ))}
+            <li>
+              <Typography
+                as="a"
+                href="/support"
+                variant="paragraph"
+                color="gray"
+                className="flex items-center gap-2 font-medium text-gray-900"
+              >
+                Support
+              </Typography>
+            </li>
           </ul>
         </div>
       </Collapse>
