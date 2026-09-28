@@ -4,9 +4,20 @@ import type { Metadata } from "next";
 import { Layout } from "@/components";
 
 export const metadata: Metadata = {
-  title: "404-DEV, INC.",
+  metadataBase: new URL("https://www.404-dev.com"),
+  title: "404‑DEV — Sites web, applications mobiles & solutions IA",
   description:
-    "404-DEV, INC. — a software company building mobile and web applications. Contact us at contact@404-dev.com.",
+    "Studio produit senior : création de sites web, applications mobiles et solutions IA utiles. Plus de 10 ans d’expérience, une équipe directe et des coûts maîtrisés.",
+  alternates: { canonical: "/", languages: { fr: "/", en: "/en" } },
+  openGraph: {
+    title: "404‑DEV — Sites web, applications mobiles & solutions IA",
+    description:
+      "Studio produit senior pour vos sites web, applications mobiles et solutions IA.",
+    url: "https://www.404-dev.com",
+    siteName: "404‑DEV",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -15,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <link
           rel="stylesheet"
